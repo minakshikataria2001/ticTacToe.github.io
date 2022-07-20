@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+    height: 30px;
+    border: 1px solid black;
+    padding-left: 12px;
+    display: flex;
+    align-items: center     ;
+    background-color: rgb(92, 12, 92);
+    color: white;
+    font-size: 20px;
+}
+.gameContainer{
+    /* text-align: center; */
+    /* align-items: center; */
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    /* display: inline; */
+    /* background-color: yellow; */
+}
+.gridContainer{
+    /* border: 2px solid black; */
+    display: grid;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    /* margin-right: 0; */
+    /* min-width: 50vw; */
+    /* display: grid; */
+    /* display: inline;
+    height: 200px;
+    width: 300px; */
+    /* grid-template-columns: 100px 100px 100px; */
+
+}
+.winner{
+    /* font-size: 20vw; */
+    color: rgb(150, 40, 40);
+}
+.hidden{
+
+    visibility: hidden;
+}
+
+.box{
+border: 2px solid black;
+font-size: 8vw;
+/* background-color: aqua; */
+display: flex;
+justify-content: center;
+}
+.box:hover{
+    background-color: rgb(197, 126, 185);
+}
+.gameInfo{
+    padding-top: 30px;
+    /* border: 2px solid black; */
+    /* display: flex; */
+    /* width: 50%; */
+    /* display: inline;
+    height: 200px;
+    width: 300px; */
+    /* margin-right: 0; */
+}
+.info{
+    color: brown;
+}
+#reset{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(122, 38, 94);
+    color: white;
+}
+#imgBox{
+    margin-top: 10px;
+    visibility: hidden;
+}
+.bgDark{
+    background-color: rgb(197, 126, 185);
+    color: rgb(151, 41, 41);
+}
+
+@media screen and (max-width:800px){ 
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    #imgBox{
+        height: 150px;
+        width: 150px;
+    }
+    
+}
+.br{
+    border-right: 0;
+}
+.bl{
+    border-left: 0;
+}
+.bt{
+    border-top: 0;
+}
+.bb{
+    border-bottom: 0;
+}
